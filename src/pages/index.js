@@ -25,7 +25,10 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  style={{ boxShadow: `none`, color: `var(--orange)` }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
@@ -34,6 +37,7 @@ class BlogIndex extends React.Component {
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
+                style={{ boxShadow: `none` }}
               />
             </div>
           )
