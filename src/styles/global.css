@@ -1,6 +1,6 @@
 :root {
-  --orange: darkorange;
-  background: white;
+  --main: #58286d;
+  --background: rgb(255, 230, 0);
 }
 
 h1,
@@ -9,5 +9,5 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--orange);
+  color: var(--main);
 }

@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
           style={{
             marginTop: rhythm(1),
             marginBottom: 0,
-            color: `var(--orange)`,
+            color: `var(--main)`,
           }}
         >
           {post.frontmatter.title}
