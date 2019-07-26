@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Nav from "./navbar"
+import style from "./layout.module.css"
+import Bio from "./bio"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -54,7 +56,13 @@ class Layout extends React.Component {
     }
     return (
       <div>
-        <Nav />
+        <div className={style.navAndHeaderContainer}>
+          <Nav />
+          <div className={style.mobileHeader}>
+            <header>{header}</header>
+            <Bio />
+          </div>
+        </div>
         <div
           style={{
             marginLeft: `auto`,
@@ -62,8 +70,9 @@ class Layout extends React.Component {
             maxWidth: rhythm(24),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
+          className={style.contentTop}
         >
-          <header>{header}</header>
+          <header className={style.webHeader}>{header}</header>
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with

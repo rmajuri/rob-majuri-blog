@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import style from "./bio.module.css"
 
 import { rhythm } from "../utils/typography"
 
@@ -39,6 +40,7 @@ const Bio = () => {
         display: `flex`,
         marginBottom: rhythm(2.5),
       }}
+      className={style.bioContainer}
     >
       <Image
         fixed={data.avatar.childImageSharp.fixed}

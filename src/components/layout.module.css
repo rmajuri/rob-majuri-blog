@@ -1,0 +1,23 @@
+.navAndHeaderContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .webHeader {
+    display: none;
+  }
+  .mobileHeader {
+    width: 80%;
+    padding: 1rem;
+  }
+  .contentTop {
+    padding-top: 0 !important;
+  }
+}
+@media (min-width: 700px) {
+  .mobileHeader {
+    display: none;
+  }
+}
