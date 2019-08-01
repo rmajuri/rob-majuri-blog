@@ -1,24 +1,25 @@
 ---
 title: About
+template: page
 ---
 
 ##Tech
 
 ###Languages
 
--JavaScript
--HTML5
--CSS3
--Node.js
--Python
+- JavaScript
+- HTML5
+- CSS3
+- Node.js
+- Python
 
 ###Libraries
 
--React.js
--React Native
--Express
--jQuery
--Bootstrap
+- React.js
+- React Native
+- Express
+- jQuery
+- Bootstrap
 
 ##Story
 
