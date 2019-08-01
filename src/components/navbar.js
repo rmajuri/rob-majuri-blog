@@ -12,7 +12,6 @@ export default () => {
   return (
     <nav role="navigation">
       <div id={style.menuToggle}>
-        {/* <input type="checkbox" /> */}
         <button
           onClick={updateExpanded}
           aria-expanded={expanded}

@@ -45,7 +45,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `var(--orange)`,
+              color: `var(--main)`,
             }}
             to={`/`}
           >
@@ -58,9 +58,15 @@ class Layout extends React.Component {
       <div>
         <div className={style.navAndHeaderContainer}>
           <Nav />
-          <div className={style.mobileHeader}>
+          <div
+            className={
+              location.pathname === rootPath
+                ? style.mobileHeaderHome
+                : style.mobileHeaderPost
+            }
+          >
             <header>{header}</header>
-            <Bio />
+            {location.pathname === rootPath ? <Bio /> : null}
           </div>
         </div>
         <div
@@ -75,7 +81,7 @@ class Layout extends React.Component {
           <header className={style.webHeader}>{header}</header>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()} Rob Majuri, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>

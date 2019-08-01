@@ -29,14 +29,15 @@
   border: 0;
   outline: none;
   position: absolute;
-  top: -7px;
-  left: -5px;
-
   cursor: pointer;
 
   z-index: 2;
 
   -webkit-touch-callout: none;
+}
+
+#menuToggle [aria-expanded="true"] {
+  position: fixed;
 }
 
 #menuToggle button span {
@@ -49,7 +50,7 @@
   background: var(--main);
   border-radius: 3px;
 
-  z-index: 1;
+  z-index: 2;
 
   transform-origin: 4px 0px;
 
@@ -67,26 +68,26 @@
 
 #menuToggle [aria-expanded="true"] span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(-45deg) translate(-2px, -1px);
   background: var(--main);
 }
 
-#menuToggle [aria-expanded="true"] span:nth-last-child(3) {
+#menuToggle [aria-expanded="true"] span:nth-last-child(2) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle [aria-expanded="true"] span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+#menuToggle [aria-expanded="true"] span:nth-last-child(3) {
+  transform: rotate(45deg) translate(0, -1px);
 }
 
 #menu {
-  position: absolute;
+  position: fixed;
   width: 18.75rem;
-  height: 55rem;
+  height: calc(100vh + 100px);
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 145px;
 
   background: var(--background);
   list-style-type: none;

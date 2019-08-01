@@ -58,7 +58,12 @@ const Bio = () => {
       <p>
         A software developer living in New Orleans, LA.
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
+        <a
+          style={{
+            color: `var(--main)`,
+          }}
+          href={`https://twitter.com/${social.twitter}`}
+        >
           Follow me on Twitter.
         </a>
       </p>
