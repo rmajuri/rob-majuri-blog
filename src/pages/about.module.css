@@ -1,0 +1,8 @@
+.tech_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tech_heading {
+  margin-top: 0;
+}
