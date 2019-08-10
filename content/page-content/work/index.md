@@ -1,9 +1,6 @@
 ---
 title: Work
 template: page
-output:
-  html_document:
-    css: ./work.module.css
 ---
 
 ##Personal Projects

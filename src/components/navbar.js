@@ -32,6 +32,9 @@ export default () => {
           <Link className={style.navItem} to={"/work"}>
             <li>Work</li>
           </Link>
+          <Link className={style.navItem} to={"/contact"}>
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </nav>

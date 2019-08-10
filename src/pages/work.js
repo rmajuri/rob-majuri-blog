@@ -4,7 +4,6 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Bio from "../components/bio"
-import "./work.css"
 
 export default ({ data, location }) => {
   const content = data.markdownRemark
