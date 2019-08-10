@@ -1,17 +1,35 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import style from "./about.module.css"
 
-export default ({ data, location }) => {
-  const aboutPage = data.markdownRemark
+export default ({ location }) => {
+  const data = useStaticQuery(graphql`
+    query About {
+      site {
+        siteMetadata {
+          title
+          author
+        }
+      }
+      aboutPic1: file(absolutePath: { regex: "/about-pic-1.png/" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
+  `)
+
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={aboutPage.frontmatter.title} />
+      <SEO title="About" />
       <h1
         style={{
           marginTop: rhythm(1),
@@ -44,41 +62,42 @@ export default ({ data, location }) => {
           </ul>
         </div>
       </div>
+      <div>
+        <Image
+          style={{ marginTop: rhythm(1) }}
+          className={style.image}
+          fluid={data.aboutPic1.childImageSharp.fluid}
+        />
+      </div>
       <h2>Story</h2>
-      <p>Hi there. I'm Rob Majuri.</p>
-      <p>I'm an English teacher turned software developer.</p>
       <p>
-        I have a deep love for learning the technical elements of a craft and
-        then synthesizing that knowlegde to create something new. I've done this
-        in the past while composing music and writing and literature. I
-        ultimately decided to invest my creative energies in software
-        development because the discpline allows me to create products that are
-        useful to others in their daily lives.
+        <span style={{ textTransform: "uppercase" }}>
+          Hi there. I&apos;m Rob Majuri.
+        </span>
       </p>
       <p>
-        Not to mention that the life of a developer is full of what I love doing
-        most - learning.
+        I&apos;m a software developer living and working in the great city of
+        New Orleans.
+      </p>
+      <p>
+        I love learning the technical elements of a craft and then synthesizing
+        that knowlegde to create something new. I&apos;ve done this my whole
+        life through creative pursuits including composing music and writing
+        literature.
+      </p>
+      <p>
+        I ultimately decided to invest my creative energies in software
+        development because what I love building most are things that are useful
+        to others in their daily lives. I have a particular passion for using my
+        skills to help businesses and entrepreneurs reach their goals.
+      </p>
+      <p>
+        The life of a developer is full of what I love doing most:{" "}
+        <strong>
+          <em>learning</em>
+        </strong>
+        .
       </p>
     </Layout>
   )
 }
-
-export const pageQuery = graphql`
-  query AboutPage {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-    markdownRemark(frontmatter: { title: { eq: "About" } }) {
-      id
-      html
-      excerpt
-      frontmatter {
-        title
-        description
-      }
-    }
-  }
-`

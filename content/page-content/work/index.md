@@ -1,4 +1,67 @@
 ---
 title: Work
 template: page
+output:
+  html_document:
+    css: ./work.module.css
 ---
+
+##Personal Projects
+
+###Click-Chord
+
+**DEPLOYED AT:** <http://clickchord.herokuapp.com>
+
+**GITHUB REPOSITORY:** <https://github.com/rmajuri/click-chord>
+
+**TECH USED:** JavaScript, React, Tone.js, Node, Express, Webpack
+
+![A screen shot of the Click-Chord app.](./click-chord.png)
+
+Click-Chord offers users the ability to create synthesizer chord progressions in the browser. Users can choose between a "Rhythm Maker" and "Rhythm Builder" to backdrop their chord progressions with percussion.
+
+_Note: Best viewed using Google Chrome._
+
+---
+
+###Indego Bike Pulse
+
+**DEPLOYED AT:** <http://indegobikepulse.herokuapp.com>
+
+**GITHUB REPOSITORY:** <https://github.com/rmajuri/indego-bike-pulse>
+
+**TECH USED:** JavaScript, jQuery, HTML, CSS, Node, Express, Webpack
+
+![A screen shot of the Indeo Bike Pulse App.](./indego-bike-pulse.png)
+
+Indego is Philadelphia's bike-sharing program. Using the Indego Bike Pulse app, users can find the Indego bike stations closest to where they are currently located. Clickable map markers trigger windows that tell users how many bikes and parking docks are available at each station.
+
+---
+
+###DIGI-TAILS Product Request App
+
+**DEPLOYED AT:** <https://github.com/rmajuri/request>
+
+**TECH USED:** React, Gatsby, PostgreSQL, Sequelize.js, Sass, Bootstrap/React-Bootstrap, Formik & Yup
+
+![A screen shot of the DIGI-TAILS Request App.](./digitails-request-app.png)
+
+DIGI-TAILS makes fully sequential digital LED tail light kits for classic cars. Popular demand dictates what products they add to their collection.
+
+Still in progress, the DIGI-TAILS Product Request App will allow users to request a tail lights for a vehcile of a particular year, make, and model. Careful form validation ensures accurate and meaningful requests.
+
+The next step in the project is to build a dashboard where the app's administrators can see the request data organized in a meaningful manner.
+
+---
+
+###Catify
+
+**DEMO:** <https://www.youtube.com/watch?v=RogIJkblx04>
+
+**GITHUB REPOSITORY:** <https://github.com/rmajuri/indego-bike-pulse>
+
+**TECH USED:** React Native, Redux, Firebase
+
+![A screen shot of the Catify app.](./catify.png)
+
+I collaborated with three other developers to create a mobile messaging app called Catify. To build this app, we used React Native and the Expo.io toolchain. Among my particular contributions to the project were developing the UI, architecting the navigation, and integrating Redux.

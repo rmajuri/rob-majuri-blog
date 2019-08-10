@@ -56,7 +56,7 @@ const Bio = () => {
         }}
       />
       <p>
-        A software developer living in New Orleans, LA.
+        I&apos;m a software developer living and working in New Orleans, LA.
         {` `}
         <a
           style={{
