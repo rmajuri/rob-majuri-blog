@@ -17,7 +17,7 @@ export default ({ location }) => {
       }
       aboutPic1: file(absolutePath: { regex: "/about-pic-1.png/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 629, maxHeight: 417) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
