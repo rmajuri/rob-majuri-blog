@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Rob Majuri`,
     author: `Rob Majuri`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `The personal blog and website of Rob Majuri.`,
+    siteUrl: `http://robertmajuri.com/`,
     social: {
       twitter: `rob_majuri_dev`,
     },
