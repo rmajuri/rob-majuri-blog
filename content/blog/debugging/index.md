@@ -1,6 +1,7 @@
 ---
 title: The Debugger is Your Friend
 date: "2019-10-05T22:12:03.284Z"
+description: This is a blog for new software developers about cultivating good debugging habits.
 template: blog
 ---
 
@@ -8,7 +9,7 @@ template: blog
 
 In my first year as a professional software developer, I'm learning that one of the most common and important parts of this job is debugging.
 
-Debugging is a part of your development skillset that's easy to overlook as a beginnger, because when you're just starting out, the projects that you're working on tend not to be very complex. Therefore, it's often easy to track down bugs in a somewhat crude way, without using the tools available. As long as your projects are small in scope, debugging in this way might not waste too much time.
+Debugging is a part of your development skillset that's easy to overlook as a beginner, because when you're just starting out, the projects that you're working on tend not to be very complex. Therefore, it's often easy to track down bugs in a somewhat crude way, without using the tools available. As long as your projects are small in scope, debugging in this way might not waste too much time.
 
 When you start working on a production application containing years worth of code and layers of complexity, however, debugging by brute force and raw trial-and-error just won't do. You'll waste lots of time. You'll grow frustrated. You'll run out of guesses about where the root of your problem lies.
 
@@ -52,7 +53,7 @@ For example, if you're wondering why you're getting a failure response from a ce
 
 These are just a few thoughts on debugging approaches. They're fresh in my mind because they've been reenforced to me often in my early software development journey.
 
-## Conclusing: Remove the Guesswork
+## Conclusion: Remove the Guesswork
 
 The thread I see that runs throughout all of the guidance I've received about debugging is that you want to remove as much guesswork as you can. Make your data visible. Read the error messages and go where they lead you. 
 
