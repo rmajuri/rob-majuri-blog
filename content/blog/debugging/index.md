@@ -45,7 +45,7 @@ This removes a lot of guess work. When the code behind your front end view fails
 
 ### Place Strategic Breakpoints
 
-The IDE you're using, and good browser developer tools, will let you place break statements throughout your code so that you can see the data being manipulated at any given location during execution.
+The IDE you're using, and good browser developer tools, will let you place breakpoints throughout your code so that you can see the data being manipulated at any given location during execution.
 
 It's worthwhile to get familiar with the information you can derive from a well-placed break statement.
 
