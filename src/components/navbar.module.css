@@ -13,7 +13,7 @@
   display: block;
   position: relative;
   top: 2rem;
-  left: 1rem;
+  left: 10px;
 
   z-index: 1;
 
@@ -100,7 +100,7 @@
 }
 
 #menu li {
-  padding: 10px 5px;
+  padding: 10px 10px;
   font-size: 22px;
 }
 
