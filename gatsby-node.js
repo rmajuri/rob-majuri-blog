@@ -40,17 +40,15 @@ exports.createPages = async ({ graphql, actions }) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
 
-    if (post.node.frontmatter.template !== "page") {
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
-    }
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    })
   })
 }
 
@@ -59,7 +57,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (
     node.internal.type === `MarkdownRemark` &&
-    node.frontmatter.template === "blog" && node.fields !== null
+    node.frontmatter.template === "blog"
   ) {
     const value = createFilePath({ node, getNode })
 
