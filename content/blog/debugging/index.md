@@ -1,7 +1,7 @@
 ---
 title: The Debugger is Your Friend
 date: "2019-10-05T22:12:03.284Z"
-description: This is a blog for new software developers about cultivating good debugging habits.
+description: On cultivating good debugging habits.
 template: blog
 ---
 
