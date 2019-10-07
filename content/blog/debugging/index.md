@@ -41,7 +41,7 @@ This tab will tell you which endpoints are being hit from a given page, the resp
 
 ![The Network tab displaying endpoint and response data](./network.png)
 
-This removes a lot of guess work. When your front end fails to fetch or post data, or fails to render in the way you think it should, just pop open your network tab and look at the endpoint interactions taking place over the wire.
+This removes a lot of guess work. When the code behind your front end view fails to fetch or post data, or fails to render in the way you think it should, just pop open your network tab and look at the endpoint interactions taking place over the wire.
 
 ### Place Strategic Breakpoints
 
