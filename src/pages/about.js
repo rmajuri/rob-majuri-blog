@@ -45,6 +45,8 @@ export default ({ location }) => {
           <h3 className={style.tech_heading}>Languages</h3>
           <ul>
             <li>JavaScript</li>
+            <li>C#</li>
+            <li>SQL</li>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>Node.js</li>
@@ -52,9 +54,12 @@ export default ({ location }) => {
           </ul>
         </div>
         <div>
-          <h3 className={style.tech_heading}>Libraries</h3>
+          <h3 className={style.tech_heading}>Libraries/Frameworks</h3>
           <ul>
             <li>React.js</li>
+            <li>Redux</li>
+            <li>.NET Core</li>
+            <li>Knockout.js</li>
             <li>React Native</li>
             <li>Express</li>
             <li>jQuery</li>
