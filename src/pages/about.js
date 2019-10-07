@@ -59,11 +59,11 @@ export default ({ location }) => {
             <li>React.js</li>
             <li>Redux</li>
             <li>.NET Core</li>
-            <li>Knockout.js</li>
             <li>React Native</li>
             <li>Express</li>
-            <li>jQuery</li>
             <li>Bootstrap</li>
+            <li>Knockout.js</li>
+            <li>jQuery</li>
           </ul>
         </div>
       </div>
