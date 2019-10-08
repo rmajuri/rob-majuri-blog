@@ -92,12 +92,12 @@ export default ({ location }) => {
       </p>
       <p>
         I ultimately decided to invest my creative energies in software
-        development because what I love building most are things that are useful
+        development because what I&apos;m most passionate about building are things that are useful
         to others in their daily lives. I have a particular passion for using my
         skills to help businesses and entrepreneurs reach their goals.
       </p>
       <p>
-        The life of a developer is full of what I love doing most:{" "}
+        The life of a developer is full of what I love most:{" "}
         <strong>
           <em>learning</em>
         </strong>
