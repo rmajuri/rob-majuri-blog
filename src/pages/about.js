@@ -86,7 +86,7 @@ export default ({ location }) => {
       </p>
       <p>
         I love learning the technical elements of a craft and then synthesizing
-        that knowlegde to create something new. I&apos;ve done this my whole
+        that knowledge to create something new. I&apos;ve done this my whole
         life through creative pursuits including composing music and writing
         literature.
       </p>
