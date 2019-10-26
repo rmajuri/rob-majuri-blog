@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import style from "./about.module.css"
+import Bio from '../components/bio'
 
 export default ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -103,6 +104,12 @@ export default ({ location }) => {
         </strong>
         .
       </p>
+      <hr
+        style={{
+          marginBottom: rhythm(1),
+        }}
+      />
+      <Bio />
     </Layout>
   )
 }
