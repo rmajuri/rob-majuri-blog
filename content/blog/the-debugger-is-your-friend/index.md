@@ -5,7 +5,7 @@ description: On cultivating good debugging habits as a new developer.
 template: blog
 ---
 
-![Starwars Stormtrooper busting out of a keyboard](https://images.unsplash.com/photo-1544816565-aa8c1166648f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+![Starwars Stormtrooper busting out of a keyboard](./debugger.jpg)
 
 In my first year as a professional software developer, I'm learning that one of the most common and important parts of this job is debugging.
 
