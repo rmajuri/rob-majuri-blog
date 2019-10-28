@@ -66,7 +66,6 @@ class Layout extends React.Component {
             }
           >
             <header>{header}</header>
-            {location.pathname === rootPath ? <Bio /> : null}
           </div>
         </div>
         <div
@@ -79,6 +78,7 @@ class Layout extends React.Component {
           className={style.contentTop}
         >
           <header className={style.webHeader}>{header}</header>
+          {location.pathname === rootPath ? <Bio /> : null}
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()} Rob Majuri, Built with
