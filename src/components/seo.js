@@ -21,6 +21,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaImage = new URL(image, siteUrl)
 
   return (
     <Helmet
@@ -29,6 +30,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      image={metaImage}
       meta={[
         {
           name: `description`,
@@ -44,7 +46,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
         },
         {
           property: `og:image`,
-          content: `${siteUrl}${image}`,
+          content: metaImage,
         },
         {
           property: `og:type`,
@@ -68,10 +70,9 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
         },
         {
           name: `twitter:image`,
-          content: `${siteUrl}${image}`,
+          content: metaImage,
         },
       ].concat(meta)}
-      image={`${siteUrl}${image}`}
     />
   )
 }
