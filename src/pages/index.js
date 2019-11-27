@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="Robert Majuri" />
+        <SEO title="Robert Majuri" image={data.image.childImageSharp.fluid} />
         <div className="webBio"></div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -54,7 +54,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        image
+      }
+    }
+    image: file(absolutePath: { regex: "/rm-icon.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 629, maxHeight: 417) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
       }
     }
     allMarkdownRemark(
