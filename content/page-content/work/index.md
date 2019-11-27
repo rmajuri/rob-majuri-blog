@@ -7,17 +7,19 @@ template: page
 
 ###Click-Chord
 
-**DEPLOYED AT:** <http://clickchord.herokuapp.com>
+**DEPLOYED AT:** <https://www.clickchord.com/>
 
 **GITHUB REPOSITORY:** <https://github.com/rmajuri/click-chord>
 
-**TECH USED:** JavaScript, React, Tone.js, Node, Express, Webpack
+**TECH USED:** Tone.js, React, JavaScript, Materiual UI, CSS Modules, JSS, Netlify
 
 ![A screen shot of the Click-Chord app.](./click-chord.png)
 
-Click-Chord offers users the ability to create synthesizer chord progressions in the browser. Users can choose between a "Rhythm Maker" and "Rhythm Builder" to backdrop their chord progressions with percussion.
+Click-Chord is an app that allows users to build synthesizer chord progressions by clicking boxes. Each box, when clicked, triggers a different chord within its respective major scale. Users can build chord progressions in any key they like.
 
-_Note: Best viewed using Google Chrome._
+In addition to building chord progressions, users can also build drum their own drum loops to accompany their compositions.
+
+Read more about how Click-Chord was made in the README of the project's Github repo (find the URL above).
 
 ---
 
