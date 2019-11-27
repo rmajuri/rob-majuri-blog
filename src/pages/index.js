@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="Blog" image={data.site.siteMetadata.image} />
+        <SEO image={data.site.siteMetadata.image} />
         <div className="webBio"></div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
