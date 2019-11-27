@@ -6,7 +6,7 @@ module.exports = {
     image: `/images/rm-icon.png`,
     siteUrl: `http://robertmajuri.com/`,
     social: {
-      twitter: `rob_majuri_dev`,
+      twitter: `@rob_majuri_dev`,
     },
   },
   plugins: [
