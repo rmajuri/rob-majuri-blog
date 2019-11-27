@@ -70,6 +70,7 @@ function SEO({ description, lang, meta, title, image }) {
           content: image,
         },
       ].concat(meta)}
+      image={image}
     />
   )
 }
