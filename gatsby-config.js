@@ -63,7 +63,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#49EE17`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `content/assets/rm-icon.png`,
       },
     },
