@@ -3,15 +3,15 @@ title: Contact
 template: page
 ---
 
-##Get in touch.
+## Get in touch.
 
-###[GitHub](https://github.com/rmajuri)
+### [GitHub](https://github.com/rmajuri)
 
-###Social
+### Social
 
 - [LinkedIn](https://www.linkedin.com/in/robertmajuri/)
 - [Twitter](https://twitter.com/rob_majuri_dev)
 
-###Direct
+### Direct
 
 - Email: [robmajuri@gmail.com](mailto:robmajuri@gmail.com)
