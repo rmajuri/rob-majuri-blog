@@ -3,7 +3,7 @@ module.exports = {
     title: `Rob Majuri`,
     author: `Rob Majuri`,
     description: `The personal blog and website of Rob Majuri.`,
-    image: `/images/rm-icon.png`,
+    image: `/images/rm-meta.png`,
     siteUrl: `https://robertmajuri.com`,
     social: {
       twitter: `@rob_majuri_dev`,
