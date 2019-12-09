@@ -51,7 +51,7 @@ const Bio = () => {
         />
       </Link>
       <p>
-        I&apos;m a software developer living and working in New Orleans, LA.
+        I&apos;m a fullstack software developer and lover of people, art, and culture.
         {` `}
         <a
           style={{
