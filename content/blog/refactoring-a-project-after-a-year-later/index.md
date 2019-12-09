@@ -19,11 +19,10 @@ The tools I leaned on to write and deploy Click-Chord include:
 
 - React (`create-react-app`)
 - Tone.js
-- Materiual UI
+- Materiual-UI
 - CSS Grid
 - CSS Modules
 - JSS
-- Material-UI
 - Netlify
 
 ## Why I Undertook a Refactor
