@@ -3,6 +3,7 @@ title: Refactoring a Project a Year Later
 date: "2019-12-07T22:10:36.284Z"
 description: Reflections on refactoring a project after a year's worth of growth as a developer.
 template: blog
+featuredImage: ./refactor.jpg
 ---
 
 ![A man and woman holding a paint roller and a sledgehammer.](./refactor.jpg)

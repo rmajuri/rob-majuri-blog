@@ -3,6 +3,7 @@ title: The Debugger is Your Friend
 date: "2019-10-05T22:12:03.284Z"
 description: On cultivating good debugging habits as a new developer.
 template: blog
+featuredImage: ./debugger.jpg
 ---
 
 ![Starwars Stormtrooper busting out of a keyboard](./debugger.jpg)
