@@ -71,7 +71,6 @@ export default ({ location }) => {
       <div>
         <Image
           style={{ marginTop: rhythm(1) }}
-          className={style.image}
           fluid={data.aboutPic1.childImageSharp.fluid}
         />
       </div>
