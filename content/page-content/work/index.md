@@ -23,17 +23,17 @@ Read more about how Click-Chord was made in the README of the project's Github r
 
 ---
 
-###Indego Bike Pulse
+###Philly Bike Finder
 
-**DEPLOYED AT:** <http://indegobikepulse.herokuapp.com>
+**DEPLOYED AT:** <https://philly-bike-finder.herokuapp.com/>
 
-**GITHUB REPOSITORY:** <https://github.com/rmajuri/indego-bike-pulse>
+**GITHUB REPOSITORY:** <https://github.com/rmajuri/philly-bike-finder>
 
 **TECH USED:** JavaScript, jQuery, HTML, CSS, Node, Express, Webpack
 
-![A screen shot of the Indeo Bike Pulse App.](./indego-bike-pulse.png)
+![A screen shot of the Indeo Bike Pulse App.](./philly-bike-finder.png)
 
-Indego is Philadelphia's bike-sharing program. Using the Indego Bike Pulse app, users can find the Indego bike stations closest to where they are currently located. Clickable map markers trigger windows that tell users how many bikes and parking docks are available at each station.
+Indego is Philadelphia's bike-sharing program. Using the Philly Bike Finder app, users can find the Indego bike stations closest to where they are currently located. Clickable map markers trigger windows that tell users how many bikes and parking docks are available at each station.
 
 ---
 
