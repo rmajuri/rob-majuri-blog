@@ -3,8 +3,10 @@ title: Customizing Material UI Components Using JSS (CSS in JavaScript)
 date: "2020-01-15T22:1:26.284Z"
 description: With a focus on functional React components.
 template: blog
-featuredImage: ./refactor.jpg
+featuredImage: ./pottery.jpg
 ---
+
+![A woman shaping clay at a pottery wheel.](./pottery.jpg)
 
 If, like me, you're a developer who appreciates good design choices, the Material UI React library is probably something you're interested in using, if you haven't used it already.
 
