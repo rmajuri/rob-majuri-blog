@@ -1,7 +1,7 @@
 ---
 title: Customizing Material UI Components Using JSS (CSS in JavaScript)
 date: "2020-01-16T22:08:36.284Z"
-description: With a focus on functional React components.
+description: A simple way to get started.
 template: blog
 featuredImage: ./pottery.jpg
 ---
