@@ -16,7 +16,7 @@ If you've never used the Material UI library for React, here's how you get up an
 
 `npm i @material-ui/core`
 
-Then, in you're component files, you can import whichever MUI components you'd like via tree shaking.
+Then, in you're component files, you can import whichever MUI components you'd like.
 
 `import { Button } from '@material-ui/core'`
 
