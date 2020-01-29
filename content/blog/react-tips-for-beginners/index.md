@@ -3,8 +3,10 @@ title: React Tips for Beginners
 date: "2019-02-18T22:10:36.284Z"
 description: A few small pointers that might help you out of tricky situations.
 template: blog
-featuredImage: ./refactor.jpg
+featuredImage: ./react-beginner.jpg
 ---
+
+![An open Macbook sitting on a bench in a park at night.](./react-beginner.jpg)
 
 When I first started with React.js, I had a tendency to get so caught up with the intricacies of its infrastructure that I didn't see the scope for creativity that React offers. I was concerned with using componentDidUpdate the right way, with learning React's logic. I was somewhat paralyzed by the thought that there was a prescribed way of using React, and that I couldn't go on coding until I read all the docs.
 
@@ -13,6 +15,7 @@ To be sure, there are such things as convention and best practice in React. But 
 Here are a few helpful patterns I've noticed.
 
 ## Aux Components
+
 If you've spent a little bit of time using React than you're probably aware of how insistent React is that things be wrapped in `<div>` tags. Often, the `<div>` tags are helpful because they allow you to add classNames to them so that you can position and style them using CSS.
 
 Sometimes, though, you have a certain kind of "container" pattern that emerges. Perhaps you want multiple components to have identical margin values. Or perhaps you simply don't want to confuse yourself by using too many `<div>` tags.
@@ -35,7 +38,7 @@ And then in some other component, you'd import `Aux` and use it like this:
     )
 ```
 
-The Aux component returns nothing but its children. This allows you to use it as a kind of "global" container. In your CSS, you can set the margins and padding of your `Aux` class, so that all components that you wrap with it conform to a predictable layout.
+The `Aux` component returns nothing but its children. This allows you to use it as a kind of "global" container. In your CSS, you can set the margins and padding of your `Aux` class, so that all components that you wrap with it conform to a predictable layout.
 
 ## Arrow Functions
 
@@ -85,9 +88,9 @@ You might do something like this:
 
 The seemingly circular relationship between `this.state.message` and the input `value={this.state.message}` can be confusing when you first encounter it. All that's happening, though, is that you're using the event object that you get from the input's onChange event listener to set the value of the message property in your state. Then, you're saying to the input element to let its value always be identical to what's in your state. This way, when you have to finally handle the event - if the user clicks a "submit" button, for example - all you have to do to handle that input is to go and get it from this.state.message. It'll be waiting there for you.
 
-You don't have to use an arrow function within event listeners. You can use the old beloved function() pattern. But the arrow function is conventional to use within event listeners because of its brevity and clarity.
+You don't have to use an arrow function within event listeners. You can use the old beloved `function()` syntax. But the arrow function is conventional to use within event listeners because of its brevity and clarity.
 
-### Computed Values
+## Computed Values
 
 Having access to the event object in your event handlers makes it somewhat easy to handle form data. You can use computed values on event.target to dynamically set the state held by any property in this.state that shares a name with the name property of its corresponding input.
 This is better illustrated.
@@ -126,11 +129,13 @@ And then say you had input elements that looked like this:
 
 Since the name properties on your input elements are the same as the names of the properties that hold them in state, you can use the very same setState method to handle the change that happens in any and all of these input fields. Like so:
 
-handleInputChange = (event) => {
-  this.setState({
-  [event.target.name] = event.target.value
-  })
-}
+```JavaScript
+    handleInputChange = (event) => {
+    this.setState({
+    [event.target.name] = event.target.value
+    })
+    }
+```
 
 Since property names within brackets get evaluated, not read literally, you can simply reference the name property on event.target. And if the name value there is identical to the name of the property your trying to update on state, then you can let the computer do the work of getting the name of the event target and sending the user's input to the appropriate place.
 
@@ -165,7 +170,7 @@ return (
 
 `map` is a very versatile tool in React. You can use it to build arrays of JSX elements even when you don't have any elements to transform into JSX.
 
-For example, say you want to build a <select> element so that a user purchasing an item can choose a quantity from a list of dropdown options. There's likely no array of numbers that you can use to transform into an array of <option> elements. But since you probably know how many different quantity options you want to render out, you can build an array containing the appropriate number of placeholders and transform that array into an array of <option> elements.
+For example, say you want to build a `<select>` element so that a user purchasing an item can choose a quantity from a list of dropdown options. There's likely no array of numbers that you can use to transform into an array of `<option>` elements. But since you probably know how many different quantity options you want to render out, you can build an array containing the appropriate number of placeholders and transform that array into an array of `<option>` elements.
 
 ```JavaScript
 const quantityOptions = new Array(product.quantity)
@@ -205,9 +210,9 @@ return this.state.songs.length ? (
 ...
 ```
 
-In the above scenario, which reflects a common one, when the songs are fetched, they're being stored in this.state.songs - an array. And in the code, we're saying that if the this.state.songs array has length - if the data has made it there - then render out the JSX. If not, render out nothing.
+In the above scenario, which reflects a common one, when the songs are fetched, they're being stored in `this.state.songs` - an array. And in the code, we're saying that if the this.state.songs array has length - if the data has made it there - then render out the JSX. If not, render out nothing.
 
-If you try to render out the songs before they get there, you'll get an error that tells you something like song.title doesn't exist. And then, when the song data does show up, it won't be able to render out, because your program has already broken.
+If you try to render out the songs before they get there, you'll get an error that tells you something like `song.title` doesn't exist. And then, when the song data does show up, it won't be able to render out, because your program has already broken.
 
 It might seem like rendering out null is a silly thing to do, but remember that the nature of React is to react to changes in props and state. Therefore, once the song data gets there and updates your local state, React will re-render your component's JSX, which will now have access to the data it needs. In the meantime, your ternary expression is preventing your component from trying to act upon information it doesn't have.
 
