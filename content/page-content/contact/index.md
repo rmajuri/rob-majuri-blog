@@ -15,3 +15,5 @@ template: page
 ### Direct
 
 - Email: [robmajuri@gmail.com](mailto:robmajuri@gmail.com)
+
+<a href="./robert_majuri_resume.pdf" download="Robert Majuri's Resume">Download Resume</a>
