@@ -1,8 +1,7 @@
 :root {
-  --main: #58286d;
-  --background: rgb(255, 230, 0);
-  --background-secondary: rgb(73, 238, 23);
-  color: rgb(73, 238, 23);
+  --main: #0f4d90;
+  --background: #f3c613;
+  --background-secondary: white;
 }
 
 h1,

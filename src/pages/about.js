@@ -81,8 +81,8 @@ export default ({ location }) => {
         </span>
       </p>
       <p>
-        I&apos;m a software developer living and working in the great city of
-        New Orleans.
+        I&apos;m a software developer living in the great city of
+        Philadelphia.
       </p>
       <p>
         I love learning the technical elements of a craft and then synthesizing
