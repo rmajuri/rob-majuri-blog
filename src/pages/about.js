@@ -43,31 +43,57 @@ export default ({ location }) => {
       <h2>Tech</h2>
       <div className={style.tech_container}>
         <div>
-          <h3 className={style.tech_heading}>Languages</h3>
+          <div>
+            <h3 className={style.tech_heading}>Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>C#</li>
+              <li>SQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Node.js</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div>
+          <h3 className={style.tech_heading}>Tools</h3>
           <ul>
-            <li>JavaScript</li>
-            <li>C#</li>
-            <li>SQL</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Node.js</li>
-            <li>Python</li>
+            <li>Visual Studio Code</li>
+            <li>Visual Studio</li>
+            <li>Git/GitHub/Azure DevOps</li>
+            <li>Microsoft SQL Server</li>
+            <li>PostgreSQL</li>
+            <li>Heroku/Netlify</li>
+            <li>TeamCity/Octopus</li>
+            <li>Babel/Webpack</li>
+            <li>Google Developer Tools</li>
+            <li>Postman</li>
           </ul>
         </div>
+      </div>
         <div>
           <h3 className={style.tech_heading}>Libraries/Frameworks</h3>
           <ul>
             <li>React.js</li>
             <li>Redux</li>
             <li>.NET Core</li>
+            <li>Express.js</li>
+            <li>jQuery</li>
+            <li>GraphQL</li>
             <li>React Native</li>
-            <li>Express</li>
+            <li>Gatsby.js</li>
+            <li>JSS</li>
+            <li>Sass</li>
+            <li>Material-UI</li>
+            <li>Express.js</li>
             <li>Bootstrap</li>
             <li>Knockout.js</li>
-            <li>jQuery</li>
+            <li>Jasmine/Mocha</li>
+            <li>xUnit/Fluent Assertions</li>
           </ul>
         </div>
       </div>
+
       <div>
         <Image
           style={{ marginTop: rhythm(1) }}
