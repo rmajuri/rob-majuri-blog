@@ -52,6 +52,8 @@ export default ({ location }) => {
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Node.js</li>
+              <li>Bash</li>
+              <li>Windows PowerShell</li>
               <li>Python</li>
             </ul>
           </div>
@@ -60,7 +62,10 @@ export default ({ location }) => {
           <ul>
             <li>Visual Studio Code</li>
             <li>Visual Studio</li>
-            <li>Git/GitHub/Azure DevOps</li>
+            <li>PyCharm</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Azure DevOps</li>
             <li>Microsoft SQL Server</li>
             <li>PostgreSQL</li>
             <li>Heroku/Netlify</li>
@@ -76,8 +81,11 @@ export default ({ location }) => {
           <ul>
             <li>React.js</li>
             <li>Redux</li>
-            <li>.NET Core</li>
+            <li>.NET</li>
             <li>Express.js</li>
+            <li>Sequelize.js</li>
+            <li>Dapper ORM</li>
+            <li>NHibernate</li>
             <li>jQuery</li>
             <li>GraphQL</li>
             <li>React Native</li>
@@ -85,7 +93,6 @@ export default ({ location }) => {
             <li>JSS</li>
             <li>Sass</li>
             <li>Material-UI</li>
-            <li>Express.js</li>
             <li>Bootstrap</li>
             <li>Knockout.js</li>
             <li>Jasmine/Mocha</li>

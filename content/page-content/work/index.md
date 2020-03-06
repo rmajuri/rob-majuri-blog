@@ -37,6 +37,22 @@ Indego is Philadelphia's bike-sharing program. Using the Philly Bike Finder app,
 
 ---
 
+###trademarkit™
+
+**DEPLOYED AT:** <https://trademarkit.herokuapp.com/>
+
+**GITHUB REPOSITORY:** <https://github.com/rmajuri/trademarkit>
+
+**TECH USED:** React, Node.js, Razzle, Material-UI
+
+**API USED:** https://markerapi.com/
+
+![A screen shot of the Indeo Bike Pulse App.](./tm.png)
+
+trademarkit™ is an app where you can search for brand names, or "wordmarks", in order to find information about the name's past and current usage. Search results show the user a description of the company or product that the trademarked name represents, along with information regarding the entitity that owns the trademark, the city and state where the owner is located, and the status of the trademark (whether it is dead or active).
+
+---
+
 ###DIGI-TAILS Product Request App
 
 **DEPLOYED AT:** <https://github.com/rmajuri/request>
