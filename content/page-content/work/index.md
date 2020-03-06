@@ -31,6 +31,8 @@ Read more about how Click-Chord was made in the README of the project's Github r
 
 **TECH USED:** JavaScript, jQuery, HTML, CSS, Node, Express, Webpack
 
+**APIS USED:** rideindego.com/stations/json, openweathermap.org
+
 ![A screen shot of the Indeo Bike Pulse App.](./philly-bike-finder.png)
 
 Indego is Philadelphia's bike-sharing program. Using the Philly Bike Finder app, users can find the Indego bike stations closest to where they are currently located. Clickable map markers trigger windows that tell users how many bikes and parking docks are available at each station.
@@ -45,7 +47,7 @@ Indego is Philadelphia's bike-sharing program. Using the Philly Bike Finder app,
 
 **TECH USED:** React, Node.js, Razzle, Material-UI
 
-**API USED:** https://markerapi.com/
+**API USED:** markerapi.com
 
 ![A screen shot of the Indeo Bike Pulse App.](./tm.png)
 
