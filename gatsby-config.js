@@ -62,7 +62,7 @@ module.exports = {
         short_name: `RMajuri`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#49EE17`,
+        theme_color: `#0f4d90`,
         display: `standalone`,
         icon: `content/assets/rm-icon.png`,
       },
