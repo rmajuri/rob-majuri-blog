@@ -1,9 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import Work from "../components/work"
+import Contact from "../components/contact"
+import About from "../components/about"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Image from "gatsby-image"
+import { rhythm, scale } from "../utils/typography"
 import "./index.css"
 
 class BlogIndex extends React.Component {
@@ -16,32 +19,16 @@ class BlogIndex extends React.Component {
       <Layout location={location} title={siteTitle}>
         <SEO title="Rob Majuri" />
         <div className="webBio"></div>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link
-                  style={{ boxShadow: `none`, color: `var(--orange)` }}
-                  to={node.fields.slug}
-                >
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-                style={{ boxShadow: `none` }}
-              />
-            </div>
-          )
-        })}
+          <div style={{ marginBottom: rhythm(3) }}>
+            <p style={{ marginBottom: rhythm(2), ...scale(.5) }}>I&apos;m a software developer and lover of people, art, and culture.</p>
+            <Image
+              style={{ marginTop: rhythm(1) }}
+              fluid={data.aboutPic1.childImageSharp.fluid}
+            />
+          </div>
+          <Work location={location} data={data} />
+          <About location={location} data={data}/>
+          {/* <Contact location={location} /> */}
       </Layout>
     )
   }
@@ -74,5 +61,19 @@ export const pageQuery = graphql`
         }
       }
     }
+    markdownRemark(frontmatter: { title: { eq: "Work" } }) {
+      id
+      html
+      frontmatter {
+        title
+      }
+    }
+    aboutPic1: file(absolutePath: { regex: "/about-pic-1.png/" }) {
+        childImageSharp {
+          fluid(maxWidth: 629, maxHeight: 417) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
   }
 `

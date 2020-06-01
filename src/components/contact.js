@@ -1,16 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Bio from "../components/bio"
 import { rhythm } from "../utils/typography"
 import { graphql } from "gatsby"
 
-export default ({ data, location }) => {
+export default ({ data }) => {
   const content = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="Contact" />
+    <div>
       <h1
         style={{
           marginTop: rhythm(1),
@@ -26,8 +21,7 @@ export default ({ data, location }) => {
           marginBottom: rhythm(1),
         }}
       />
-      <Bio />
-    </Layout>
+    </div>
   )
 }
 

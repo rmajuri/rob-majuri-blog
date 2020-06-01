@@ -1,36 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import style from "./about.module.css"
-import Bio from '../components/bio'
 
-export default ({ location }) => {
-  const data = useStaticQuery(graphql`
-    query About {
-      site {
-        siteMetadata {
-          title
-          author
-        }
-      }
-      aboutPic1: file(absolutePath: { regex: "/about-pic-1.png/" }) {
-        childImageSharp {
-          fluid(maxWidth: 629, maxHeight: 417) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-    }
-  `)
-
-  const siteTitle = data.site.siteMetadata.title
+export default ({ data }) => {
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="About" />
+    <div>
       <h1
         style={{
           marginTop: rhythm(1),
@@ -100,13 +75,6 @@ export default ({ location }) => {
           </ul>
         </div>
       </div>
-
-      <div>
-        <Image
-          style={{ marginTop: rhythm(1) }}
-          fluid={data.aboutPic1.childImageSharp.fluid}
-        />
-      </div>
       <h2>Story</h2>
       <p>
         <span style={{ textTransform: "uppercase" }}>
@@ -138,10 +106,9 @@ export default ({ location }) => {
       </p>
       <hr
         style={{
-          marginBottom: rhythm(1),
+          marginBottom: rhythm(2),
         }}
       />
-      <Bio />
-    </Layout>
+    </div>
   )
 }

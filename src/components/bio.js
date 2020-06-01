@@ -51,7 +51,7 @@ const Bio = () => {
         />
       </Link>
       <p>
-        I&apos;m a fullstack software developer and lover of people, art, and culture.
+        I&apos;m a software developer and lover of people, art, and culture.
         {` `}
         <a
           style={{
