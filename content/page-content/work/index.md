@@ -57,7 +57,7 @@ trademarkit™ is an app where you can search for brand names, or "wordmarks", i
 
 ###DIGI-TAILS Product Request App
 
-**DEPLOYED AT:** <https://github.com/rmajuri/request>
+**GITHUB REPOSITORY:** <https://github.com/rmajuri/request>
 
 **TECH USED:** React, Gatsby, PostgreSQL, Sequelize.js, Sass, Bootstrap/React-Bootstrap, Formik & Yup
 

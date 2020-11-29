@@ -51,16 +51,7 @@ const Bio = () => {
         />
       </Link>
       <p>
-        I&apos;m a fullstack software developer and lover of people, art, and culture.
-        {` `}
-        <a
-          style={{
-            color: `var(--main)`,
-          }}
-          href={`https://twitter.com/${social.twitter}`}
-        >
-          Follow me on Twitter.
-        </a>
+        I&apos;m a tech professional and lover of people, art, and culture.
       </p>
     </div>
   )

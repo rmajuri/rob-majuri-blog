@@ -114,7 +114,7 @@ export default ({ location }) => {
         </span>
       </p>
       <p>
-        I&apos;m a software developer living in the great city of
+        I&apos;m a tech professional living in the great city of
         Philadelphia.
       </p>
       <p>
@@ -125,7 +125,7 @@ export default ({ location }) => {
       </p>
       <p>
         I ultimately decided to invest my creative energies in software
-        development because what I&apos;m most passionate about building are things that are useful
+        development because what I&apos;m most passionate about is helping to build things that are useful
         to others in their daily lives. I have a particular passion for using my
         skills to help businesses and entrepreneurs reach their goals.
       </p>
