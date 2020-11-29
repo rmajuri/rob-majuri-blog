@@ -130,7 +130,7 @@ export default ({ location }) => {
         skills to help businesses and entrepreneurs reach their goals.
       </p>
       <p>
-        The life of a developer is full of what I love most:{" "}
+        The life of a tech professional is full of what I love most:{" "}
         <strong>
           <em>learning</em>
         </strong>
