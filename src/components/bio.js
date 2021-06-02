@@ -51,7 +51,7 @@ const Bio = () => {
         />
       </Link>
       <p>
-        I&apos;m a tech professional and lover of people, art, and culture.
+        I&apos;m a software engineer and lover of people, art, and culture.
       </p>
     </div>
   )

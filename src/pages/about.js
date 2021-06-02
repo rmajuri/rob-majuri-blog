@@ -47,6 +47,7 @@ export default ({ location }) => {
             <h3 className={style.tech_heading}>Languages</h3>
             <ul>
               <li>JavaScript</li>
+              <li>Python</li>
               <li>C#</li>
               <li>SQL</li>
               <li>HTML5</li>
@@ -54,7 +55,6 @@ export default ({ location }) => {
               <li>Node.js</li>
               <li>Bash</li>
               <li>Windows PowerShell</li>
-              <li>Python</li>
             </ul>
           </div>
           <div>
@@ -114,7 +114,7 @@ export default ({ location }) => {
         </span>
       </p>
       <p>
-        I&apos;m a tech professional living in the great city of
+        I&apos;m a software engineer living in the great city of
         Philadelphia.
       </p>
       <p>
@@ -130,7 +130,7 @@ export default ({ location }) => {
         skills to help businesses and entrepreneurs reach their goals.
       </p>
       <p>
-        The life of a tech professional is full of what I love most:{" "}
+        The life of a software engineer is full of what I love most:{" "}
         <strong>
           <em>learning</em>
         </strong>
