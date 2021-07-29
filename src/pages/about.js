@@ -16,7 +16,7 @@ export default ({ location }) => {
           author
         }
       }
-      aboutPic1: file(absolutePath: { regex: "/about-pic-1.png/" }) {
+      aboutPic1: file(absolutePath: { regex: "/rob.jpeg/" }) {
         childImageSharp {
           fluid(maxWidth: 629, maxHeight: 417) {
             ...GatsbyImageSharpFluid_noBase64
@@ -40,63 +40,36 @@ export default ({ location }) => {
       >
         About
       </h1>
-      <h2>Tech</h2>
+      <h2>Main Tech</h2>
       <div className={style.tech_container}>
         <div>
           <div>
-            <h3 className={style.tech_heading}>Languages</h3>
+            <h3 className={style.tech_heading}>Languages Experience</h3>
             <ul>
               <li>JavaScript</li>
               <li>Python</li>
               <li>C#</li>
-              <li>SQL</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Node.js</li>
-              <li>Bash</li>
-              <li>Windows PowerShell</li>
             </ul>
           </div>
           <div>
-          <h3 className={style.tech_heading}>Tools</h3>
+          <h3 className={style.tech_heading}>Databases Experience</h3>
           <ul>
-            <li>Visual Studio Code</li>
-            <li>Visual Studio</li>
-            <li>PyCharm</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Azure DevOps</li>
+            <li>Mongo</li>
+            <li>Firestore</li>
             <li>Microsoft SQL Server</li>
             <li>PostgreSQL</li>
-            <li>Heroku/Netlify</li>
-            <li>TeamCity/Octopus</li>
-            <li>Babel/Webpack</li>
-            <li>Google Developer Tools</li>
-            <li>Postman</li>
           </ul>
         </div>
       </div>
         <div>
-          <h3 className={style.tech_heading}>Libraries/Frameworks</h3>
+          <h3 className={style.tech_heading}>Tools Experience</h3>
           <ul>
-            <li>React.js</li>
-            <li>Redux</li>
-            <li>.NET</li>
-            <li>Express.js</li>
-            <li>Sequelize.js</li>
-            <li>Dapper ORM</li>
-            <li>NHibernate</li>
-            <li>jQuery</li>
-            <li>GraphQL</li>
-            <li>React Native</li>
-            <li>Gatsby.js</li>
-            <li>JSS</li>
-            <li>Sass</li>
-            <li>Material-UI</li>
-            <li>Bootstrap</li>
-            <li>Knockout.js</li>
-            <li>Jasmine/Mocha</li>
-            <li>xUnit/Fluent Assertions</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitLab</li>
+            <li>Jira</li>
+            <li>Confluence</li>
+            <li>AWS</li>
           </ul>
         </div>
       </div>
